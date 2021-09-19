@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+   <title>LTC Stops</title>
+   <style>
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div {
+         margin-top: 1em;
+      }
+
+      table {
+         border: 1px solid black;
+      }
+
+      tr:nth-child(even) {
+         background: rgba(40, 89, 5, 0.33);
+      }
+
+      th,
+      td {
+         border: 1px solid black;
+         padding: 5px;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>LTC Stops</h1>
+   <h2>Enter a route number and/or a street, or leave blank. Note: street names are case sensitive.</h2>
+   <label><b>Route Number:</b></label>
+   <input type="text" id="routeNumber" placeholder="ex: 014" />
+   <label><b>Street Name:</b></label>
+   <input type="text" id="stopName" placeholder="ex: Highbury" />
+   <input type="submit" value="Enter" onclick="renderOutput();" />
+   <div id="countContainer"></div>
+   <div id="outputContainer"></div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
